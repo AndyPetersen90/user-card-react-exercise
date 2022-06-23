@@ -47,8 +47,8 @@ const UserCard = (props) => {
                 </div>
             </div>
             <div id='button-container'>
-                <button onClick={previous} className='nav-button'>{'<'} Previous</button>
-                <button onClick={next} className='nav-button'>Next {'>'}</button>
+                {index === 0 ? <button className= "nav-button hide"></button> : <button onClick={previous} className='nav-button'>{'<'} Previous</button>}
+                {index === (users.length - 1) ? <button className="nav-button hide"></button> : <button onClick={next} className='nav-button'>Next {'>'}</button>}
             </div>
         </div>
     )
