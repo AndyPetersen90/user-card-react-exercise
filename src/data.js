@@ -283,6 +283,19 @@ const data = [
       "I Heart Huckabees",
       "Howard Zinn: You Can't Be Neutral on a Moving Train"
     ]
+  },
+  {
+    id: 26,
+    name: { first: "Andrew", last: "Petersen" },
+    city: "Logan",
+    country: "United States of America",
+    employer: null,
+    title: "Student at DevMountain",
+    favoriteMovies: [
+      "Monty Python and the Holy Grail",
+      "UHF",
+      "Moulin Rouge"
+    ]
   }
 ];
 
