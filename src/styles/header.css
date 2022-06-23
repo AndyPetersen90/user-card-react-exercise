@@ -1,5 +1,9 @@
 #header {
-    background-color: #35a5db;
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+    top: 0%;
+    background-color: #29f129;
     color: #222;
     width: 100vw;
     max-width: 100%;

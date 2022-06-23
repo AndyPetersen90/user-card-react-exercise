@@ -17,6 +17,11 @@ const UserCard = (props) => {
         setIndex(index - 1);
     };
 
+    const deleteUser = () => {
+        data.splice(index, 1);
+        index <= data.length - 1 ? setIndex(index + 1) : setIndex(index - 1)
+    };
+
     return (
         <div id='background'>
             <div id='card-main'>
@@ -48,6 +53,11 @@ const UserCard = (props) => {
             </div>
             <div id='button-container'>
                 {index === 0 ? <button className= "nav-button hide"></button> : <button onClick={previous} className='nav-button'>{'<'} Previous</button>}
+                <div id='edit-container'>
+                    <button className='info-button'>Edit</button>
+                    <button className='info-button' onClick={deleteUser}>Delete</button>
+                    <button className='info-button'>New</button>
+                </div>
                 {index === (users.length - 1) ? <button className="nav-button hide"></button> : <button onClick={next} className='nav-button'>Next {'>'}</button>}
             </div>
         </div>
